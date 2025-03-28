@@ -6,7 +6,7 @@
 # ELSE:
 # RETURN original string 's'
 
-def removeprefix(prefix):
+def removeprefix(s, prefix):
     if s.startswith(prefix):
         return s[len(prefix):]
     return s
@@ -14,6 +14,6 @@ def removeprefix(prefix):
 main_string = input("Enter the string: ")
 prefix = input("Enter the prefix to remove: ")
 
-result = custom_removeprefix(main_string, prefix)
+result = removeprefix(main_string, prefix)
 print("\nResult after removing prefix:")
 print(result)
