@@ -5,3 +5,6 @@
     # GET input from user
     # output = CALL simple_title(user_input) 
     # DISPLAY title_case_output
+
+def simple_title(s):
+    return ' '.join(w.capitalize() for w in s.split())
