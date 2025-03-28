@@ -7,3 +7,12 @@
 # RETURN False
 # RETURN substring(main_string, main_length - suffix_length, main_length) == suffix
 # END FUNCTION
+
+def custom_endswith(main_string, suffix):
+    suffix_len = len(suffix)
+    main_len = len(main_string)
+    
+    if suffix_len > main_len:
+        return False
+    
+    return main_string[main_len - suffix_len:] == suffix
