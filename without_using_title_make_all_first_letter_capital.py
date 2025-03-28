@@ -8,3 +8,10 @@
 
 def simple_title(s):
     return ' '.join(w.capitalize() for w in s.split())
+
+titled_words = []
+    for word in s.split():
+        if word:
+            titled_word = word[0].upper() + word[1:].lower()
+            titled_words.append(titled_word)
+    return ' '.join(titled_words)
