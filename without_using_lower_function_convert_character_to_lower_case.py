@@ -18,3 +18,10 @@ def to_lowercase(s):
             result.append((char) + 32)
         else:
             result.append(char)
+        return ''.join(result)
+    
+user_input = input("Enter a string to convert to lowercase: ")
+
+lowercase_output = to_lowercase(user_input)
+print("\nLowercase result:")
+print(lowercase_output)
