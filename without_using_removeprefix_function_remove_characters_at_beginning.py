@@ -10,3 +10,10 @@ def removeprefix(prefix):
     if s.startswith(prefix):
         return s[len(prefix):]
     return s
+
+main_string = input("Enter the string: ")
+prefix = input("Enter the prefix to remove: ")
+
+result = custom_removeprefix(main_string, prefix)
+print("\nResult after removing prefix:")
+print(result)
