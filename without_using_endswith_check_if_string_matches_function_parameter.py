@@ -8,11 +8,9 @@
 # RETURN substring(main_string, main_length - suffix_length, main_length) == suffix
 # END FUNCTION
 
-def custom_endswith(main_string, suffix):
-    suffix_len = len(suffix)
-    main_len = len(main_string)
+def ends(main, suffix):
+    return len(main) >= len(suffix) and main[-len(suffix):] == suffix
     
-    if suffix_len > main_len:
-        return False
-    
-    return main_string[main_len - suffix_len:] == suffix
+main = input("Main string: ")
+suffix = input("check if ends with: ")
+print("Ends with!" if ends(main, suffix) else "Doesn't end with")
