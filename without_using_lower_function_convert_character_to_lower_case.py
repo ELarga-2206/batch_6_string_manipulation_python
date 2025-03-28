@@ -10,3 +10,11 @@
         #ELSE:
             #ADD character to result unchanged
     #RETURN result
+
+def to_lowercase(s):
+    result = []
+    for char in s:
+        if 65 < ord(char) < 90:
+            result.append((char) + 32)
+        else:
+            result.append(char)
