@@ -6,5 +6,7 @@
 # ELSE:
 # RETURN original string 's'
 
-
-
+def removeprefix(prefix):
+    if s.startswith(prefix):
+        return s[len(prefix):]
+    return s
