@@ -7,3 +7,9 @@
 # FOR i FROM (text_length - sub_length) DOWN TO 0:
 # IF text[i TO i+sub_length] == substring:
 # RETURN i --- Last match found
+
+def custom_rindex(text, substring):
+    sub_len = len(substring)
+    for i in range(len(text) - sub_len, -1, -1):
+        if text[i:i+sub_len] == substring:
+            return i
