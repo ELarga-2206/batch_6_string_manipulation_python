@@ -8,5 +8,5 @@ def custom_rindex(text, substring):
     raise ValueError("substring not found")  
 
 
-    #######mf
+    #######mf fcbubefejfb
   
