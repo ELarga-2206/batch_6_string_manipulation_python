@@ -14,3 +14,9 @@
 # GET width
 # result = CALL custom_zfill(text, width)
 # DISPLAY "Result:", result
+
+def custom_zfill(text, width):
+    zeros_needed = width - len(text)
+    if zeros_needed > 0:
+        return '0' * zeros_needed + text
+    return text
