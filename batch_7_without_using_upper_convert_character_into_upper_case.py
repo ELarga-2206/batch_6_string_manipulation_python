@@ -10,3 +10,12 @@
 # ELSE:
 # ADD character TO result  // Keep non-lowercase chars unchanged
 # RETURN result
+
+def custom_upper(text):
+    result = []
+    for char in text:
+        if 97 <= ord(char) <= 122:
+            result.append(chr(ord(char) - 32))
+        else:
+            result.append(char)
+    return ''.join(result)
