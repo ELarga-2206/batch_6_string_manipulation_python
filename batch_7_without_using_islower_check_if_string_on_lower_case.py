@@ -6,3 +6,9 @@
 # FOR each character IN text:
 # IF character is a letter AND NOT lowercase:
 # RETURN False
+
+def is_all_lower(text):
+    for char in text:
+        if char.isalpha() and not (97 <= ord(char) <= 122):
+            return False
+    return bool(text)
