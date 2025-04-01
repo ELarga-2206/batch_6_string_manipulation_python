@@ -7,11 +7,3 @@ def custom_rindex(text, substring):
             return i
     raise ValueError("substring not found")  
   
-text = input("Enter the main text: ")
-sub = input("Enter the substring to find: ")
-
-try:
-    position = custom_rindex(text, sub)
-    print(f"Last occurrence found at position: {position}")
-except ValueError as e:
-    print(e)
