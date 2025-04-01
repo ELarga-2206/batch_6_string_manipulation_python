@@ -7,3 +7,7 @@
 # ELSE:
 # RETURN text
 # END FUNCTION
+
+def custom_rjust(text, width, fill_char=' '):
+    padding = width - len(text)
+    return fill_char * padding + text if padding > 0 else text
