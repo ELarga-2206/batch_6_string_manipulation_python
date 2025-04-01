@@ -12,3 +12,8 @@
 # IF text[i TO i+sub_length] == substring:
 # RETURN i ---First match found
 
+def custom_index(text, substring):
+    sub_len = len(substring)
+    for i in range(len(text) - sub_len + 1):
+        if text[i:i+sub_len] == substring:
+            return i 
