@@ -5,3 +5,8 @@ def custom_startswith(text, prefix):
 
 text = input("Enter the main text: ")
 prefix = input("Enter the prefix to check: ")
+
+if custom_startswith(text, prefix):
+    print(f" The text starts with '{prefix}'")
+else:
+    print(f"The text does NOT start with '{prefix}'")
