@@ -13,3 +13,9 @@
 # DISPLAY "Original:", user_input
 # DISPLAY "Stripped:", result
 # END PROGRAM
+
+def custom_rstrip(text):
+    end = len(text)
+    while end > 0 and text[end-1] == ' ':
+        end -= 1
+    return text[:end]
