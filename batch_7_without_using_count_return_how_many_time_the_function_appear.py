@@ -17,3 +17,12 @@
 # INCREMENT count BY 1
 # 
 #RETURN count
+
+def custom_count(text, substring):
+    count = 0
+    sub_len = len(substring)
+    for i in range(len(text) - sub_len + 1):
+        if text[i:i+sub_len] == substring:
+            count += 1
+            
+    return count
