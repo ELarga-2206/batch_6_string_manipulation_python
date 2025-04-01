@@ -6,3 +6,10 @@
 # end = end - 1
 # RETURN text[FROM START TO end]
 # END FUNCTION
+
+# DISPLAY "Enter a string with trailing spaces:"
+# GET user_input
+# result = CALL custom_rstrip(user_input)
+# DISPLAY "Original:", user_input
+# DISPLAY "Stripped:", result
+# END PROGRAM
