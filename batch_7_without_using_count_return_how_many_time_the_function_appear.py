@@ -7,3 +7,13 @@
 # GET substring FROM USER
 # SET result = CALL custom_count(text, substring)
 # DISPLAY "The substring appears " + result + " times"
+
+#FUNCTION custom_count(text, substring):
+# SET count = 0
+# SET sub_len = LENGTH(substring)
+
+# FOR i FROM 0 TO LENGTH(text) - sub_len:
+# IF text[i TO i+sub_len] EQUALS substring:
+# INCREMENT count BY 1
+# 
+#RETURN count
