@@ -6,4 +6,7 @@ def custom_rindex(text, substring):
         if text[i:i+sub_len] == substring:
             return i
     raise ValueError("substring not found")  
+
+
+    #######mf
   
